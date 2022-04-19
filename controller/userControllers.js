@@ -80,7 +80,7 @@ const authUser = expressAsyncHandler(async (req, res, next) => {
     }
     next();
   } catch (ex) {
-    console.log(ex, "ex");
+    // console.log(ex, "ex");
     return res.status(500).send("Something went wrong");
   }
 });

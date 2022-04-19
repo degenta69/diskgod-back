@@ -18,6 +18,8 @@ const userSchema = mongoose.Schema(
     },
     profilepic: {
       type: String,
+      default: "https://res.cloudinary.com/degenta69/image/upload/v1649601093/discord-brands_cunlcp.png",
+      
       // data: Buffer,
       // contentType: String,
     },
