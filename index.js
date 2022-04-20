@@ -27,7 +27,7 @@ app.use('/api/chats',chatRoutes);
 app.use('/api/message',messageRoutes);
 //  deployment code
 
-const __dirname1 = path.resolve(__dirname, '..');
+const __dirname1 = path.resolve();
 
 if(process.env.NODE_ENV === "production"){
     app.use(express.static(__dirname1 + "/vc-front/build"));
